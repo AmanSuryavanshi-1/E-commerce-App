@@ -1,7 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import styled from "styled-components"
-// import girl from "./girl.jpg"
 import {sliderItems} from "../data"
+import { useState } from "react";
 const Container = styled.div`
     width: 100%;
     height: 100vh;
@@ -13,8 +13,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
     height: 100%;
     display: flex;
-    transform: translateX(-300vw);   /* bcz we want to move slider in x direction */
-    /* if we move -100vw in x direction next slide wil appear the same goes on to -200 & -300(3rd slide) */
+    transform: translateX(${(props)=>props.slideIndex * -100}vw);   /* bcz we want to move slider in x direction */
 `;
 
 const Slide = styled.div`
@@ -22,7 +21,9 @@ height: 100vh;
 width: 100vw;
 display: flex;
 align-items: center;
-background-color: #${props=>props.bg};
+background-color: #${(props)=>props.bg}; 
+/* In React, the # symbol is sometimes used in front of props when using the new React 18 syntax for handling props. This syntax is called "automatic batching" and allows multiple updates to the same component to be batched together for performance optimization. */
+/* props are used to change background as the slides changes */
 `;
 
 const ImgContainer = styled.div`
@@ -74,16 +75,22 @@ const Arrow = styled.div`
     margin: auto;
     cursor: pointer;
     opacity: 0.5;
-    z-index: 2;
+    z-index: 2; 
+    /* ///////?? */
 `;
 
 
 const Slider = () => {
     
-    // const [slidIndex, setSlideIndex] = useState(0);
+    const [slideIndex, setSlideIndex] = useState(0);
     const handleClick = (direction) =>{
-
-    }
+        if(direction==="left"){
+            setSlideIndex(slideIndex > 0 ? slideIndex-1 : 3);
+        }
+        else{
+            setSlideIndex(slideIndex < 3 ? slideIndex+1 : 0);
+        }
+    };
 
     return (
     <Container>
@@ -91,11 +98,12 @@ const Slider = () => {
             <ArrowLeftOutlined/>
         </Arrow>
 
-        <Wrapper>
+        <Wrapper slideIndex={slideIndex}>
 
-            {sliderItems.map((item=>(
+            {sliderItems.map((item=>( 
+                // it will take data from sliderItems in data.js and then will create a key value pairs  
 
-            <Slide bg={item.bg}>
+            <Slide bg={item.bg} key={item.id}>  
                 <ImgContainer>
                      <Image src={item.img}></Image>
                 </ImgContainer>

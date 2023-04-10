@@ -5,7 +5,7 @@ import clear from "./clear.png"
 export const sliderItems = [
     {
         id:1,
-        img:{girl} ,
+        img: girl ,
         title:"SUMMER SALE",
         desc:"DON'T COMPROMISE ON STYLE GET FLAT 70% OFF FOR NEW ARRIVALS.",
         bg:"f5fafd"
@@ -13,23 +13,23 @@ export const sliderItems = [
     },
     {
         id:2,
-        img: {boy},
+        img: clear,
         title:"CLEARANCE SALE",
         desc:"DON'T COMPROMISE ON STYLE GET FLAT 70% OFF FOR NEW ARRIVALS.",
-        bg:"f5fafd"
+        bg:"fcf1ed"
 
     },
     {
         id:3,
-        img: {clear} ,
+        img: girl ,
         title:"FURNITURE BESTSELLERS",
         desc:"DON'T COMPROMISE ON STYLE GET FLAT 70% OFF FOR NEW ARRIVALS.",
         bg:"f5fafd"
 
     },
     {
-        id:1,
-        img: girl ,
+        id:4,
+        img: boy ,
         title:"BIG DISCOUNT ON ELECTRONIC ITEMS!",
         desc:"DON'T COMPROMISE ON STYLE GET FLAT 70% OFF FOR NEW ARRIVALS.",
         bg:"f5fafd"
