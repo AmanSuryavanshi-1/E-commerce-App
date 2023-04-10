@@ -1,5 +1,5 @@
 import girl from "./girl.png"
-import electronic from "./electronic.png"
+import electronic from "./Elect.png"
 import clear from "./clear.png"
 import furniture from "./furniture2.png"
 
