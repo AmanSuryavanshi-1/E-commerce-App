@@ -33,6 +33,7 @@ height: 100%;
 
 const Image = styled.img`
 height: 80%;
+width: 40vw;
 padding: 30px;      /*   maine add kiya  */
 `;
 

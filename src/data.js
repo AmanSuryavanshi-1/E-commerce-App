@@ -1,6 +1,7 @@
 import girl from "./girl.png"
-import boy from "./boy.jpg"
+import electronic from "./electronic.png"
 import clear from "./clear.png"
+import furniture from "./furniture2.png"
 
 export const sliderItems = [
     {
@@ -17,22 +18,21 @@ export const sliderItems = [
         title:"CLEARANCE SALE",
         desc:"DON'T COMPROMISE ON STYLE GET FLAT 70% OFF FOR NEW ARRIVALS.",
         bg:"fcf1ed"
-
     },
     {
         id:3,
-        img: girl ,
+        img: furniture ,
         title:"FURNITURE BESTSELLERS",
         desc:"DON'T COMPROMISE ON STYLE GET FLAT 70% OFF FOR NEW ARRIVALS.",
-        bg:"f5fafd"
+        bg:"fdfae5"
 
     },
     {
         id:4,
-        img: boy ,
+        img: electronic ,
         title:"BIG DISCOUNT ON ELECTRONIC ITEMS!",
         desc:"DON'T COMPROMISE ON STYLE GET FLAT 70% OFF FOR NEW ARRIVALS.",
-        bg:"f5fafd"
+        bg:"fbf0f4"
 
     },
 
