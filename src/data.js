@@ -36,8 +36,25 @@ export const sliderItems = [
 
     },
 
-]
+];
 
+export const categories = [
+    {
+        id:1,
+        img: girl ,
+        title:"SHIRT STYLE!",
+    },
+    {
+        id:1,
+        img: girl ,
+        title:"SHIRT STYLE!",
+    },  
+    {
+        id:1,
+        img: girl ,
+        title:"SHIRT STYLE!",
+    },
+];
 
 
 
