@@ -45,12 +45,12 @@ export const categories = [
         title:"SHIRT STYLE!",
     },
     {
-        id:1,
+        id:2,
         img: girl ,
         title:"SHIRT STYLE!",
     },  
     {
-        id:1,
+        id:3,
         img: girl ,
         title:"SHIRT STYLE!",
     },
