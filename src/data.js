@@ -2,6 +2,10 @@ import girl from "./girl.png"
 import electronic from "./Elect.png"
 import clear from "./clear.png"
 import furniture from "./furniture2.png"
+import home_furniture from "./home_furniture.png"
+import laptop from "./Phone & laptop.png"
+import fashion from "./fashion.png"
+
 
 export const sliderItems = [
     {
@@ -40,20 +44,20 @@ export const sliderItems = [
 
 export const categories = [
     {
-        id:1,
-        img: girl ,
-        title:"SHIRT STYLE!",
-    },
-    {
-        id:2,
-        img: girl ,
-        title:"SHIRT STYLE!",
-    },  
-    {
-        id:3,
-        img: girl ,
-        title:"SHIRT STYLE!",
-    },
+        id: 1,
+        img: fashion,
+        title: "Fashion",
+      },
+      {
+        id: 2,
+        img: laptop,
+        title: "Mobiles & Tablets",
+      },
+      {
+        id: 3,
+        img: home_furniture,
+        title: "Home and Furniture",
+      },
 ];
 
 
