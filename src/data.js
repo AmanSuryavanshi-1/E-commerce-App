@@ -60,7 +60,44 @@ export const categories = [
       },
 ];
 
-
+export const popularProducts = [
+    {
+        id: 1,
+        img: fashion,
+      },
+      {
+        id: 2,
+        img: home_furniture,
+      },
+      {
+        id: 3,
+        img: laptop,
+      },
+      {
+        id: 4,
+        img: fashion,
+      },
+      {
+        id: 5,
+        img: home_furniture,
+      },
+      {
+        id: 6,
+        img: laptop,
+      },
+      {
+        id: 7,
+        img: fashion,
+      },
+      {
+        id: 8,
+        img: home_furniture,
+      },
+      {
+        id: 9,
+        img: laptop,
+      },
+];
 
 
 
