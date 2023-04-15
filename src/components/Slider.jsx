@@ -35,7 +35,7 @@ height: 100%;
 const Image = styled.img`
 height: 80%;
 width: 40vw;
-padding: 30px;      /*   maine add kiya  */
+
 `;
 
 const InfoContainer = styled.div`
@@ -51,7 +51,7 @@ const Desc = styled.p`
 margin: 50px 0px;
 font-size: 20px;
 font-weight: 500;
-letter-spacing: 3px;
+letter-spacing: 2px;
 `;
 
 const Button = styled.button`
