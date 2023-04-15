@@ -6,6 +6,16 @@ import home_furniture from "./home_furniture.png"
 import laptop from "./laptop and mobile.jpg"
 import fashion from "./fashion2.jpg"
 
+import denimJacket from "./PopularProducts/denimJacket.png"
+import cloth1 from "./PopularProducts/cloth1.png"
+import cloth2 from "./PopularProducts/cloth2.png"
+import cloth3 from "./PopularProducts/cloth3.png"
+import cloth4 from "./PopularProducts/cloth4.png"
+import cloth5 from "./PopularProducts/cloth5.png"
+import greenSweater from "./PopularProducts/green-sweater.png"
+import pinkSweater from "./PopularProducts/pink-sweater.png"
+
+
 
 export const sliderItems = [
     {
@@ -63,39 +73,35 @@ export const categories = [
 export const popularProducts = [
     {
         id: 1,
-        img: fashion,
+        img: cloth1,
       },
       {
         id: 2,
-        img: home_furniture,
+        img: cloth2,
       },
       {
         id: 3,
-        img: laptop,
+        img: cloth3,
       },
       {
         id: 4,
-        img: fashion,
+        img: cloth4,
       },
       {
         id: 5,
-        img: home_furniture,
+        img: cloth5,
       },
       {
         id: 6,
-        img: laptop,
+        img: pinkSweater,
       },
       {
         id: 7,
-        img: fashion,
+        img: denimJacket,
       },
       {
         id: 8,
-        img: home_furniture,
-      },
-      {
-        id: 9,
-        img: laptop,
+        img: greenSweater,
       },
 ];
 
