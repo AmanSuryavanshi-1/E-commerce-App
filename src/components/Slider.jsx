@@ -2,12 +2,13 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import styled from "styled-components"
 import {sliderItems} from "../data"
 import { useState } from "react";
+
 const Container = styled.div`
     width: 100%;
     height: 100vh;
     display:flex;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden; /* it will hide both x and y scrollbar */
 `;
 
 const Wrapper = styled.div`
