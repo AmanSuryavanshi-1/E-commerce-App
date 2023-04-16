@@ -2,7 +2,7 @@ import { Badge } from '@material-ui/core';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
-import myLogo from '../main logo.png'
+import myLogo from '../images/main logo.png'
 const Container = styled.div`
     height: 60px;
 `;
@@ -40,11 +40,16 @@ const Input = styled.input`
 const Center = styled.div`
     flex:1; 
     text-align: center;
+    margin: -3px;  /*  added for alignment of LOGO */
+    margin-bottom: -30px;
+    
 `;
 
-// const Logo = styled.image`
+const Logo = styled.img`
+height:45px;
+width:120px;
 
-// `;
+`;
 
 const Right = styled.div`
     flex:1; 
@@ -71,7 +76,7 @@ const Navbar = () => {
                 </SearchContainer>
             </Left>
 
-            <Center>< img src={myLogo} alt='logo' height={"39px"} width={"120px"}/></Center>
+            <Center><Logo src={myLogo}/></Center>
             
             <Right>
                 <MenuItem>REGISTER</MenuItem>
