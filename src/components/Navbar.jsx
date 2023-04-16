@@ -40,11 +40,16 @@ const Input = styled.input`
 const Center = styled.div`
     flex:1; 
     text-align: center;
+    margin: -3px;  /*  added for alignment of LOGO */
+    margin-bottom: -30px;
+    
 `;
 
-// const Logo = styled.image`
+const Logo = styled.img`
+height:45px;
+width:120px;
 
-// `;
+`;
 
 const Right = styled.div`
     flex:1; 
@@ -71,7 +76,7 @@ const Navbar = () => {
                 </SearchContainer>
             </Left>
 
-            <Center>< img src={myLogo} alt='logo' height={"39px"} width={"120px"}/></Center>
+            <Center><Logo src={myLogo}/></Center>
             
             <Right>
                 <MenuItem>REGISTER</MenuItem>
