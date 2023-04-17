@@ -3,13 +3,14 @@ import styled from "styled-components";
 const Container = styled.div`
 flex:1;
 margin: 3px;
-height: 70vh;
+height: 60vh;
 position: relative;
 `;
 const Image = styled.img`
 width:100%;
-height: 80%;
+height: 95%;
 object-fit: cover;
+border-radius: 5px;
 `;
 const Info = styled.div`
 position: absolute;
@@ -23,16 +24,22 @@ align-items: center;
 justify-content: center;
 `;
 const Title = styled.h1`
-color:white;
+color: #fbfbfb;
+text-shadow: 2px 2px 5px black;
 margin-bottom: 20px;
 `;
 const Button = styled.button`
 border:none;
 padding: 10px;
 background-color: white;
-color: gray;
+border-radius: 5px;
+color: #080808;
 cursor: pointer;
 font-weight: 600;
+
+&:hover{
+  background-color: #e0e0e0;
+}
 `;
 
 const CategoryItem = ({item}) => {

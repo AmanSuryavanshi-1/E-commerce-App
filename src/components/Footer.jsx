@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 import {Facebook, Instagram, MailOutline, Phone, Pinterest, Room, Twitter } from '@material-ui/icons';
 import styled from 'styled-components'
 import myLogo from '../images/main logo.png'
 import payment from '../images/payment.png'
-=======
-import { Description, Facebook, Instagram, MailOutline, Phone, Pinterest, Room, Twitter } from '@material-ui/icons';
-import styled from 'styled-components'
-import myLogo from '../main logo.png'
-import payment from '../payment.png'
->>>>>>> aac95d61b0e9554766577608050a414eb328d54a
 
 const Container = styled.div`
 display: flex;
@@ -81,17 +74,11 @@ margin-bottom: 20px;
 display: flex;
 align-items: center;
 `;
-<<<<<<< HEAD
+
 
 const Payment =styled.img`
 width:50%;
-`;
-=======
->>>>>>> aac95d61b0e9554766577608050a414eb328d54a
-
-const Payment =styled.img`
-width:50%;
-`;
+`
 // const Bottom = styled.div`
 // display: flex;
 // flex-wrap: wrap;
@@ -150,12 +137,10 @@ const Footer = () => {
             </ContactItem>
             <Payment src={payment}/>
         </Right>
-<<<<<<< HEAD
-=======
+
 
         {/* <Bottom>
         </Bottom> */}
->>>>>>> aac95d61b0e9554766577608050a414eb328d54a
         {/* In addition to these navigation links, our footer section also contains legal information such as disclaimers, terms and conditions, and privacy policies. We take your privacy and security seriously, and we want to make sure you understand our policies and how we protect your personal information. To further demonstrate our commitment to your security, we've included logos of trusted payment and security providers. When you shop with us, you can feel confident knowing that your payment information is safe and secure. Thank you for choosing our online store for your shopping needs. We hope you have a great experience on our website, and please don't hesitate to contact us if you have any questions or concerns. */}
     </Container>
   )

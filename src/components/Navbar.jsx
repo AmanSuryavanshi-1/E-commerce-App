@@ -48,7 +48,6 @@ const Center = styled.div`
 const Logo = styled.img`
 height:45px;
 width:120px;
-
 `;
 
 const Right = styled.div`

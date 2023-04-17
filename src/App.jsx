@@ -1,12 +1,12 @@
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
 // import ProductList from "./pages/ProductList";
 // import Product from "./pages/Product";
 // import Register from "./pages/Register";
 
-import Login from "./pages/Login";
+// import Login from "./pages/Login";
 
 const App = () => {
-  return <Login/>
+  return <Home/>
   // <Register/>
   // <Product/>
   // <ProductList/>;

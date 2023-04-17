@@ -1,24 +1,36 @@
 import styled from "styled-components"
 // import image from "../images/electronics-removebg-preview (1).png"
+import logo from "../images/main logo.png"
+
 
 const Container = styled.div`
 width: 100vw;
 height: 100vh;
-/* background: linear-gradient(
+background: linear-gradient(
     rgba(255,255,255,0.5),
     rgba(255,255,255,0.5)
 ),
-    url(image); */ 
+    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    center; 
     background-size: cover;
 display: flex;
 align-items: center;
 justify-content: center;
 `;
 
+const Logo = styled.img`
+height: 100px;
+width: 150px;
+position: absolute;
+top:0px;
+left: 0px;
+`;
+
 const Wrapper = styled.div`
 padding: 20px;
 width: 30%;
 background-color: white;
+border-radius: 20px;
 `;
 
 const Title = styled.h1`
@@ -53,11 +65,14 @@ margin: 10px 0px;
 font-size: 12px;
 text-decoration: underline;
 cursor: pointer;
+letter-spacing: 0.5px;
 `;
 
 const Login = () => {
   return (
+    
     <Container>
+        <Logo src={logo}/>
     <Wrapper>
         <Title>SIGN IN</Title>
         <Form>
