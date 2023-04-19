@@ -9,7 +9,6 @@ const App = () => {
   return <Home/>
 
   // <Login/>
-  // <Home/>;
   // <Register/>;
   // <Product/>
   // <ProductList/>;
