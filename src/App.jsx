@@ -7,10 +7,13 @@ import Cart from "./pages/Cart";
 
 const App = () => {
   return <Cart/>
-  // <Register/>
+
+  // <Login/>
+  // <Home/>;
+  // <Register/>;
   // <Product/>
   // <ProductList/>;
-  // <Home/>;
+  // <Cart/>
 };
 
 export default App;

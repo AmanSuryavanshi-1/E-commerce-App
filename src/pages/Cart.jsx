@@ -5,10 +5,13 @@ import styled from "styled-components";
 import shoes from "../images/Shoes_2.png"
 import shoes2 from "../images/Shoes.png"
 import { Add, Remove } from "@material-ui/icons";
+import {mobile}from "../responsive";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
 padding: 20px;
+${mobile({padding:"10px"})};
+
 `;
 
 const Title = styled.h1`
@@ -31,7 +34,9 @@ const TopButton = styled.button`
   background-color: ${(props)=>props.type === "filled" ? "black": "transparent"};
   color: ${(props)=>props.type === "filled" && "white"};
 `;
-const TopTexts = styled.div``;
+const TopTexts = styled.div`
+${mobile({display:"none"})};
+`;
 const TopText = styled.span`
 text-decoration: underline;
 cursor: pointer;
@@ -41,6 +46,7 @@ margin: 0px 10px;
 const Bottom = styled.div`
 display: flex;
 justify-content: space-between;
+${mobile({flexDirection:"column"})};
 `;
 const Info = styled.div`
 flex: 3;
@@ -49,6 +55,7 @@ flex: 3;
 const Product = styled.div`
 display: flex;
 justify-content: space-between;
+${mobile({flexDirection:"column"})}
 `;
 
 const Image = styled.img`
@@ -62,7 +69,9 @@ const Details = styled.div`
 padding: 20px;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: space-around;
+${mobile({padding:"10px"})};
+
 `;
 const ProductName = styled.span``;
 
@@ -88,7 +97,27 @@ const ProductAmountContainer = styled.div`
 display: flex;
 align-items: center;
 margin-bottom: 20px;
+
 `;
+
+const AddContainer = styled.div`
+background-color: black;
+border-radius: 50%;
+display: flex;
+align-items: center;
+color:white;
+margin:5px;
+`;
+
+const RemoveContainer = styled.div`
+background-color: black;
+border-radius: 50%;
+display: flex;
+align-items: center;
+color:white;
+margin:5px;
+`;
+
 const ProductAmount = styled.div`
 font-size:24px;
 margin:5px;
@@ -96,6 +125,7 @@ margin:5px;
 const ProductPrice = styled.div`
 font-size: 30px;
 font-weight: 200;
+${mobile({marginBottom:"20px"})};
 `;
 const Hr = styled.hr`
 background-color: #eee;
@@ -116,13 +146,27 @@ font-weight: 200;
 
 `;
 
-const SummaryItem = styled.div``;
+const SummaryItem = styled.div`
+margin: 30px 0px;
+display: flex;
+justify-content: space-between;
+font-weight: ${props=>props.type === "total" &&  "500"};
+font-size: ${props=>props.type === "total" &&  "24px"};
+//it will find for (type=total) in summary item and if there is one it will assign the values to it
+`;
 
 const SummaryItemText = styled.span``;
 
 const SummaryItemPrice = styled.span``;
 
-const SummaryButton = styled.button``;
+const SummaryButton = styled.button`
+width: 100%;
+padding: 10px;
+background-color: black;
+color: white;
+font-weight: 600;
+`;
+
 
 const Cart = () => {
   return (
@@ -136,7 +180,7 @@ const Cart = () => {
               <TopButton>CONTINUE SHOPPING</TopButton>
               <TopTexts>
                 <TopText>Shopping Bag (2)</TopText>
-                <TopText>Your Whislist (0)</TopText>
+                <TopText>Your Whishlist (0)</TopText>
               </TopTexts>
               <TopButton type="filled">CHECKOUT NOW</TopButton>
             </Top>
@@ -146,21 +190,28 @@ const Cart = () => {
               <Product>
 
                 <ProductDetail>
-                  <Image src={shoes}/>
+                  <Image src={shoes2}/>
                   <Details>
                     <ProductName><b>Product:</b> JORDAN SHOES</ProductName>
                     <ProductId><b>ID:</b>8381365249</ProductId>
-                    <ProductColor color="darkgreen"/>
+                    <ProductColor color="gray"/>
                     <ProductSize><b>Size:</b>9</ProductSize>
                   </Details>
                 </ProductDetail>
                 <PriceDetail>
                     <ProductAmountContainer>
-                      <Add/>
+                       <AddContainer>
+                          <Add/>
+                        </AddContainer>
+                      
                       <ProductAmount>2</ProductAmount>
-                      <Remove/>
+                      
+                      <RemoveContainer>
+                        <Remove/>
+                      </RemoveContainer>
+                    
                     </ProductAmountContainer>
-                  <ProductPrice>₹ 5999</ProductPrice>
+                  <ProductPrice>₹ 11,998</ProductPrice>
                 </PriceDetail>
                
               </Product>
@@ -170,21 +221,29 @@ const Cart = () => {
               <Product>
 
 <ProductDetail>
-  <Image src={shoes2}/>
+  <Image src={shoes}/>
   <Details>
     <ProductName><b>Product:</b> NIKE SHOES</ProductName>
     <ProductId><b>ID:</b>9315435249</ProductId>
-    <ProductColor color="Gray"/>
-    <ProductSize><b>Size:</b>M</ProductSize>
+    <ProductColor color="darkgreen"/>
+    <ProductSize><b>Size:</b>10</ProductSize>
   </Details>
 </ProductDetail>
 <PriceDetail>
     <ProductAmountContainer>
-      <Add/>
+
+    <AddContainer>
+          <Add/>
+    </AddContainer>
+
       <ProductAmount>1</ProductAmount>
-      <Remove/>
+
+      <RemoveContainer>
+          <Remove/>
+      </RemoveContainer>
+
     </ProductAmountContainer>
-  <ProductPrice>₹ 2999</ProductPrice>
+  <ProductPrice>₹ 2,999</ProductPrice>
 </PriceDetail>
 
 </Product>
@@ -194,7 +253,7 @@ const Cart = () => {
                 <SummaryTitle>ORDER SUMMARY</SummaryTitle>
                 <SummaryItem>
                   <SummaryItemText>SubTotal</SummaryItemText>
-                  <SummaryItemPrice>₹ 2999</SummaryItemPrice>
+                  <SummaryItemPrice>₹ 14,997</SummaryItemPrice>
                 </SummaryItem>
                 <SummaryItem>
                   <SummaryItemText>Shipping Charges</SummaryItemText>
@@ -204,9 +263,9 @@ const Cart = () => {
                   <SummaryItemText>Shipping Discount</SummaryItemText>
                   <SummaryItemPrice>-₹ 50</SummaryItemPrice>
                 </SummaryItem>
-                <SummaryItem>
-                  <SummaryItemText type = "total">Total</SummaryItemText>
-                  <SummaryItemPrice>-₹ 80</SummaryItemPrice>
+                <SummaryItem type = "total">
+                  <SummaryItemText >Total</SummaryItemText>
+                  <SummaryItemPrice>₹ 14,997</SummaryItemPrice>
                 </SummaryItem>
                 <SummaryButton>CHECKOUT NOW</SummaryButton>
               </Summary>
