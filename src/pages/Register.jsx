@@ -1,6 +1,8 @@
 import styled from "styled-components"
 // import image from "../images/electronics-removebg-preview (1).png"
 import logo from "../images/main logo.png"
+import {mobile}from "../responsive";
+
 
 const Container = styled.div`
 width: 100vw;
@@ -15,6 +17,8 @@ background: linear-gradient(
 display: flex;
 align-items: center;
 justify-content: center;
+${mobile({backgroundSize: "200% 100%",backgroundRepeat:"no-repeat"})};
+
 `;
 
 const Logo = styled.img`
@@ -23,6 +27,7 @@ width: 150px;
 position: absolute;
 top:0px;
 left: 0px;
+${mobile({height:"70px",width:"100px"})};
 `;
 
 const Wrapper = styled.div`
@@ -30,11 +35,14 @@ padding: 20px;
 width: 40%;
 background-color: white;
 border-radius: 20px;
+${mobile({width:"75%",height:"70vh"})};
+
 `;
 
 const Title = styled.h1`
 font-weight: 24px;
 font-weight: 300;
+${mobile({fontWeight:"8px",fontWeight:"100"})};
 `;
 
 const Form = styled.form`
@@ -69,9 +77,7 @@ const Register = () => {
     <Container>
         <Logo src={logo}/>
         <Wrapper>
-            <Title>
-
-            </Title>
+            <Title>Sign Up with your Email to get started</Title>
             <Form>
                 <Input placeholder="name"/>
                 <Input placeholder="last name"/>

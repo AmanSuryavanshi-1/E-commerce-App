@@ -2,6 +2,8 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import styled from "styled-components"
 import {sliderItems} from "../data"
 import { useState } from "react";
+import {mobile} from "../responsive";
+
 
 const Container = styled.div`
     width: 100%;
@@ -9,6 +11,8 @@ const Container = styled.div`
     display:flex;
     position: relative;
     overflow: hidden; /* it will hide both x and y scrollbar */
+    ${mobile({display:"none"})}
+    /* no need to show slider on mobile */
 `;
 
 const Wrapper = styled.div`

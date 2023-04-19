@@ -116,13 +116,26 @@ font-weight: 200;
 
 `;
 
-const SummaryItem = styled.div``;
+const SummaryItem = styled.div`
+margin: 30px 0px;
+display: flex;
+justify-content: space-between;
+font-weight: ${props=>props.type === "total" &&  "500"};
+font-size: ${props=>props.type === "total" &&  "24px"};
+//it will find for (type=total) in summary item and if there is one it will assign the values to it
+`;
 
 const SummaryItemText = styled.span``;
 
 const SummaryItemPrice = styled.span``;
 
-const SummaryButton = styled.button``;
+const SummaryButton = styled.button`
+width: 100%;
+padding: 10px;
+background-color: black;
+color: white;
+font-weight: 600;
+`;
 
 const Cart = () => {
   return (
@@ -160,7 +173,7 @@ const Cart = () => {
                       <ProductAmount>2</ProductAmount>
                       <Remove/>
                     </ProductAmountContainer>
-                  <ProductPrice>₹ 5999</ProductPrice>
+                  <ProductPrice>₹ 11,998</ProductPrice>
                 </PriceDetail>
                
               </Product>
@@ -184,7 +197,7 @@ const Cart = () => {
       <ProductAmount>1</ProductAmount>
       <Remove/>
     </ProductAmountContainer>
-  <ProductPrice>₹ 2999</ProductPrice>
+  <ProductPrice>₹ 2,999</ProductPrice>
 </PriceDetail>
 
 </Product>
@@ -194,7 +207,7 @@ const Cart = () => {
                 <SummaryTitle>ORDER SUMMARY</SummaryTitle>
                 <SummaryItem>
                   <SummaryItemText>SubTotal</SummaryItemText>
-                  <SummaryItemPrice>₹ 2999</SummaryItemPrice>
+                  <SummaryItemPrice>₹ 14,997</SummaryItemPrice>
                 </SummaryItem>
                 <SummaryItem>
                   <SummaryItemText>Shipping Charges</SummaryItemText>
@@ -204,9 +217,9 @@ const Cart = () => {
                   <SummaryItemText>Shipping Discount</SummaryItemText>
                   <SummaryItemPrice>-₹ 50</SummaryItemPrice>
                 </SummaryItem>
-                <SummaryItem>
-                  <SummaryItemText type = "total">Total</SummaryItemText>
-                  <SummaryItemPrice>-₹ 80</SummaryItemPrice>
+                <SummaryItem type = "total">
+                  <SummaryItemText >Total</SummaryItemText>
+                  <SummaryItemPrice>₹ 14,997</SummaryItemPrice>
                 </SummaryItem>
                 <SummaryButton>CHECKOUT NOW</SummaryButton>
               </Summary>

@@ -1,6 +1,7 @@
 import styled from "styled-components"
 // import image from "../images/electronics-removebg-preview (1).png"
 import logo from "../images/main logo.png"
+import {mobile} from "../responsive";
 
 
 const Container = styled.div`
@@ -16,6 +17,7 @@ background: linear-gradient(
 display: flex;
 align-items: center;
 justify-content: center;
+${mobile({backgroundSize: "200% 100%",backgroundRepeat:"no-repeat"})};
 `;
 
 const Logo = styled.img`
@@ -24,6 +26,7 @@ width: 150px;
 position: absolute;
 top:0px;
 left: 0px;
+${mobile({height:"70px",width:"100px"})};
 `;
 
 const Wrapper = styled.div`
@@ -31,6 +34,8 @@ padding: 20px;
 width: 30%;
 background-color: white;
 border-radius: 20px;
+${mobile({width:"75%"})};
+
 `;
 
 const Title = styled.h1`
