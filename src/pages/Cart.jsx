@@ -167,7 +167,6 @@ color: white;
 font-weight: 600;
 `;
 
-
 const Cart = () => {
   return (
     <Container>

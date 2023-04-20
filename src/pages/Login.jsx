@@ -2,6 +2,8 @@ import styled from "styled-components"
 import {mobile} from "../responsive";
 // import Announcement from '../components/Announcement'
 import Navbar from "../components/Navbar";
+// import image from "../images/electronics-removebg-preview (1).png"
+import logo from "../images/main logo.png"
 
 
 const ParentContainer = styled.div``;
@@ -31,6 +33,14 @@ ${mobile({backgroundSize: "200% 100%",backgroundRepeat:"no-repeat"})};
 // left: 0px;
 // ${mobile({height:"70px",width:"100px"})};
 // `;
+const Logo = styled.img`
+height: 100px;
+width: 150px;
+position: absolute;
+top:0px;
+left: 0px;
+${mobile({height:"70px",width:"100px"})};
+`;
 
 const Wrapper = styled.div`
 padding: 20px;

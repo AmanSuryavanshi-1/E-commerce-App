@@ -23,6 +23,8 @@ const Wrapper = styled.div`
     align-items : center;
     justify-content: space-between;
     ${mobile({padding:"10px 0px"})}
+    /* background-color: #e9bb7f; */
+    ${mobile({padding:"10px 0px"})}
 `
 const Left = styled.div`
 flex: 0.5;
@@ -40,11 +42,13 @@ const SearchContainer =styled.div`
     padding: 5px;
     width:80%;
     ${mobile({marginLeft: '10px',width:"70px"})}
+    ${mobile({marginLeft: '10px'})}
 `;
 
 const Input = styled.input`
     border:none;
     width:100%;
+    ${mobile({width:"50px"})}
     ${mobile({width:"50px"})}
 `;
 
@@ -53,8 +57,7 @@ display: flex;
 align-items: center;
 justify-content: flex-start;
 flex:2;
-    /*  added for alignment of LOGO */
-    ${mobile({margin: "0"})}
+${mobile({margin: "0"})}
 `;
 
 const Logo = styled.img`
@@ -77,7 +80,9 @@ font-weight: 500;
 padding-left: 5px;
 letter-spacing: 1px;
     cursor: pointer;
-    ${mobile({fontSize:"12px",marginLeft: "10px",letterSpacing:"0px",fontWeight: "100"})}
+    ${mobile({fontSize:"12px",marginLeft: "10px",letterSpacing:"0px"})}
+${mobile({justifyContent:"center" ,flex:2})}
+
 `;
 
 const MenuItem = styled.div`
@@ -86,8 +91,10 @@ const MenuItem = styled.div`
     font-weight: 500;
     cursor:pointer;
     margin-left: 25px;
-${mobile({fontSize:"12px",marginLeft: "10px",letterSpacing:"0px",fontWeight: "100"})}
+${mobile({fontSize:"12px",marginLeft: "10px",letterSpacing:"0px"})}
 
+
+${mobile({fontSize:"12px",marginLeft: "10px"})}
 
 `;
 
