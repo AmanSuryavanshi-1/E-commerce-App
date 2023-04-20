@@ -5,23 +5,23 @@ import styled from 'styled-components'
 import myLogo from '../images/main logo.png'
 import {mobile} from "../responsive";
 
+import { Link } from 'react-router-dom';
+
 const Container = styled.div`
     height: 60px;
-
+    background-color: #a0dbfd;
     /* @media only screen and (max-width:400px){
 
     } */
-    /* instead of writing this fuction evertime i can use this function  */
+    /* instead of writing this function every time i can use this function  */
     ${mobile({height:"50px"})}
-
 `;
 
 const Wrapper = styled.div`
-    padding:10px 20px;
+    padding: 10px 20px;
     display: flex;
     align-items : center;
     justify-content: space-between;
-    /* background-color: #e9bb7f; */
     ${mobile({padding:"10px 0px"})}
 `
 const Left = styled.div`
@@ -30,24 +30,21 @@ display: flex;
 align-items: center;
 `;
 
-const Language = styled.span`
-    font-size: 14px;
-    cursor: pointer;
-    ${mobile({display:"none"})}
-/* we dont need to display language EN for smaller devices we can hide it by display:none */
-`;
-
 const SearchContainer =styled.div`
-    border: 0.5px solid lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
     display: flex;
     align-items: center;
     margin-left: 25px;
     padding: 5px;
-    ${mobile({marginLeft: '10px'})}
+    width:80%;
+    ${mobile({marginLeft: '10px',width:"50px"})}
 `;
 
 const Input = styled.input`
     border:none;
+    width:100%;
     ${mobile({width:"50px"})}
 `;
 
@@ -55,7 +52,6 @@ const Center = styled.div`
     flex:1; 
     text-align: center;
     /*  added for alignment of LOGO */
-    margin-bottom: -20px;
     ${mobile({margin: "0"})}
 `;
 
@@ -73,12 +69,22 @@ const Right = styled.div`
 ${mobile({justifyContent:"center" ,flex:2})}
 
 `;
+const HomeContainer = styled.div`
+font-size:17px;
+font-weight: 500;
+padding-left: 5px;
+letter-spacing: 1px;
+    cursor: pointer;
+    ${mobile({fontSize:"12px",marginLeft: "10px",fontWeight: 200})}
+`;
 
 const MenuItem = styled.div`
-    font-size:16px;
+    font-size:17px;
+    letter-spacing: 1px;
+    font-weight: 500;
     cursor:pointer;
     margin-left: 25px;
-${mobile({fontSize:"12px",marginLeft: "10px"})}
+${mobile({fontSize:"12px",marginLeft: "10px",fontWeight: 200})}
 
 `;
 
@@ -87,21 +93,21 @@ const Navbar = () => {
     <Container>
         <Wrapper>
             <Left>
-                <Language>EN</Language>
+                <HomeContainer><Link to = "/" style={{color:"black"}}> HOME</Link></HomeContainer>
                 <SearchContainer>
                     <Input placeholder='search'/>
-                    <Search style={{color:"gray", fontSize: "16px"}}/>
+                    <Search style={{color:"darkblue", fontSize: "16px"}}/>
                 </SearchContainer>
             </Left>
 
             <Center><Logo src={myLogo}/></Center>
             
             <Right>
-                <MenuItem>REGISTER</MenuItem>
-                <MenuItem>SIGN IN</MenuItem>
+                <MenuItem><Link to="/Register" style={{color:"black"}}>REGISTER</Link></MenuItem>
+                <MenuItem><Link to="/Login" style={{color:"black"}}>SIGN IN</Link></MenuItem>
                 <MenuItem>
                     <Badge badgeContent={4} color="primary">
-                        <ShoppingCartOutlined />
+                    <Link to="/Cart" style={{color:"black"}}><ShoppingCartOutlined /></Link>
                     </Badge>
                 </MenuItem>
             </Right>

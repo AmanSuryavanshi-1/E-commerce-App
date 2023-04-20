@@ -1,12 +1,15 @@
 import styled from "styled-components"
-// import image from "../images/electronics-removebg-preview (1).png"
-import logo from "../images/main logo.png"
 import {mobile} from "../responsive";
+// import Announcement from '../components/Announcement'
+import Navbar from "../components/Navbar";
 
+
+const ParentContainer = styled.div``;
 
 const Container = styled.div`
 width: 100vw;
-height: 100vh;
+height: calc(100vh - 60px);
+/* total view port - height of navbar 60px */
 background: linear-gradient(
     rgba(255,255,255,0.5),
     rgba(255,255,255,0.5)
@@ -20,14 +23,14 @@ justify-content: center;
 ${mobile({backgroundSize: "200% 100%",backgroundRepeat:"no-repeat"})};
 `;
 
-const Logo = styled.img`
-height: 100px;
-width: 150px;
-position: absolute;
-top:0px;
-left: 0px;
-${mobile({height:"70px",width:"100px"})};
-`;
+// const Logo = styled.img`
+// height: 100px;
+// width: 150px;
+// position: absolute;
+// top:0px;
+// left: 0px;
+// ${mobile({height:"70px",width:"100px"})};
+// `;
 
 const Wrapper = styled.div`
 padding: 20px;
@@ -75,9 +78,9 @@ letter-spacing: 0.5px;
 
 const Login = () => {
   return (
-    
+    <ParentContainer>
+    <Navbar/>
     <Container>
-        <Logo src={logo}/>
     <Wrapper>
         <Title>SIGN IN</Title>
         <Form>
@@ -89,6 +92,7 @@ const Login = () => {
         </Form>
     </Wrapper>
 </Container>
+</ParentContainer>
   )
 }
 

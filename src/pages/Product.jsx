@@ -18,7 +18,7 @@ flex: 1;
 const Image = styled.img`
 width: 100%;
 height: 80vh;
-object-fit: cover; // cover cancrop the image
+object-fit: cover; // cover can crop the image
 ${mobile({height:"40vh"})}
 `;
 const InfoContainer = styled.div`
