@@ -1,7 +1,7 @@
 import girl from "./images/girl.png"
 import electronic from "./images/electronics.png"
 import clear from "./images/clear.png"
-import furniture from "./images/furniture.png"
+import furniture from "./images/Furniture2.png"
 import home_furniture from "./images/home_furniture.png"
 import laptop from "./images/laptop and mobile.jpg"
 import fashion from "./images/fashion2.jpg"

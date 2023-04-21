@@ -38,6 +38,7 @@ height: 100%;
 `;
 
 const Image = styled.img`
+object-fit: fill;
 height: 80%;
 width: 40vw;
 

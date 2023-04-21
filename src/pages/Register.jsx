@@ -1,8 +1,6 @@
 import styled from "styled-components"
 import {mobile}from "../responsive";
 import Navbar from "../components/Navbar";
-import logo from "../images/main logo.png";
-
 const ParentContainer = styled.div``;
 
 const Container = styled.div`
@@ -20,14 +18,6 @@ align-items: center;
 justify-content: center;
 `;
 
-const Logo = styled.img`
-height: 100px;
-width: 150px;
-position: absolute;
-top:0px;
-left: 0px;
-${mobile({height:"70px",width:"100px"})};
-`;
 
 const Wrapper = styled.div`
 padding: 20px;
@@ -42,7 +32,6 @@ const Title = styled.h1`
 font-size: 24px;
 font-weight: 300;
 ${mobile({fontSize:"15px",fontWeight: "600"})};
-${mobile({fontWeight:"8px",fontWeight:"100"})};
 `;
 
 const Form = styled.form`

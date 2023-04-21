@@ -5,11 +5,11 @@ import styled from 'styled-components'
 import myLogo from '../images/main logo.png'
 import {mobile} from "../responsive";
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Container = styled.div`
     height: 60px;
-    background-color: #a0dbfd;
+    background-color: #e1f4ff;
     /* @media only screen and (max-width:400px){
 
     } */
@@ -42,13 +42,11 @@ const SearchContainer =styled.div`
     padding: 5px;
     width:80%;
     ${mobile({marginLeft: '10px',width:"70px"})}
-    ${mobile({marginLeft: '10px'})}
 `;
 
 const Input = styled.input`
     border:none;
     width:100%;
-    ${mobile({width:"50px"})}
     ${mobile({width:"50px"})}
 `;
 
@@ -71,18 +69,21 @@ const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
-${mobile({justifyContent:"center" ,flex:2})}
 
 `;
 const HomeContainer = styled.div`
 font-size:17px;
 font-weight: 500;
-padding-left: 5px;
 letter-spacing: 1px;
     cursor: pointer;
-    ${mobile({fontSize:"12px",marginLeft: "10px",letterSpacing:"0px"})}
-${mobile({justifyContent:"center" ,flex:2})}
+    ${mobile({fontSize:"12px",marginLeft: "5px",letterSpacing:"0px",paddingLeft:"5px"})}
 
+    padding: 10px;
+    &:hover{
+        background-color: #e1f4ff;
+        border-radius: 10px;
+        box-shadow: 2px 3px 5px #a1dbff ;
+    }
 `;
 
 const MenuItem = styled.div`
@@ -91,12 +92,16 @@ const MenuItem = styled.div`
     font-weight: 500;
     cursor:pointer;
     margin-left: 25px;
-${mobile({fontSize:"12px",marginLeft: "10px",letterSpacing:"0px"})}
+${mobile({fontSize:"12px",marginLeft: "5px",letterSpacing:"0px",paddingLeft:"5px"})}
 
-
-${mobile({fontSize:"12px",marginLeft: "10px"})}
-
+padding: 10px;
+    &:hover{
+        background-color: #e1f4ff;
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px #a1dbff ;
+    }
 `;
+
 
 const Navbar = () => {
   return (
@@ -107,7 +112,7 @@ const Navbar = () => {
             </Left>
 
             <Center>
-            <HomeContainer className='home-link'><Link to = "/" style={{color:"black",textDecoration:"none"}}> HOME</Link></HomeContainer>
+            <HomeContainer className='home-link'><NavLink to = "/" style={{color:"black",textDecoration:"none"}}> HOME</NavLink></HomeContainer>
                 <SearchContainer>
                     <Input placeholder='search'/>
                     <Search style={{color:"darkblue", fontSize: "16px" }}/>
@@ -115,11 +120,11 @@ const Navbar = () => {
             </Center>
             
             <Right>
-                <MenuItem><Link to="/Register" style={{color:"black",textDecoration:"none"}}>REGISTER</Link></MenuItem>
-                <MenuItem><Link to="/Login" style={{color:"black",textDecoration:"none"}}>SIGN IN</Link></MenuItem>
+                <MenuItem><NavLink to="/Register" style={{color:"black",textDecoration:"none"}}>REGISTER</NavLink></MenuItem>
+                <MenuItem><NavLink to="/Login" style={{color:"black",textDecoration:"none"}}>SIGN IN</NavLink></MenuItem>
                 <MenuItem>
                     <Badge badgeContent={4} color="primary">
-                    <Link to="/Cart" style={{color:"black"}}><ShoppingCartOutlined /></Link>
+                    <NavLink to="/Cart" style={{color:"black"}}><ShoppingCartOutlined /></NavLink>
                     </Badge>
                 </MenuItem>
             </Right>
