@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { popularProducts } from "../data"; // importng from data.js
-import Product from "./Product";
+import { AllProductItems } from "../data"; // importing from data.js
+import ProductHover from "./ProductHover";
 
 const Container = styled.div`
 padding: 20px;
@@ -12,8 +12,8 @@ justify-content: space-between;
 const Products = () => {
   return (
     <Container>
-        {popularProducts.map((item)=>(
-        <Product item={item} key={item.id}/>
+        {AllProductItems.map((item)=>(
+        <ProductHover item={item} key={item.id}/>
         ))}
     </Container>
   )

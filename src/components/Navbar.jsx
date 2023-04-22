@@ -93,6 +93,7 @@ const MenuItem = styled.div`
     cursor:pointer;
     margin-left: 25px;
 ${mobile({fontSize:"12px",marginLeft: "5px",letterSpacing:"0px",paddingLeft:"5px"})}
+/* borderRadius: "none",boxShadow:"none" */
 
 padding: 10px;
     &:hover{
