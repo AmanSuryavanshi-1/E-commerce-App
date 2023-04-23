@@ -48,7 +48,7 @@ const Furniture = () => {
             <Navbar/>
             <Announcement/>
     
-            <Title>Summer Sale</Title>
+            <Title>Furniture Sale</Title>
             <FilterContainer>
                 <Filter>
                     <FilterText>Filter Products:</FilterText>

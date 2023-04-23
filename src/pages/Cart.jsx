@@ -2,8 +2,8 @@ import Announcement from "../components/Announcement";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import styled from "styled-components";
-import shoes from "../images/Shoes_2.png"
-import shoes2 from "../images/Shoes.png"
+import shoes2 from "../images/ShoesItems/Shoes.png"
+import shoes from "../images/ShoesItems/Shoes1.png"
 import { Add, Remove } from "@material-ui/icons";
 import {mobile}from "../responsive";
 

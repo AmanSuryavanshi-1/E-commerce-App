@@ -4,8 +4,6 @@ import ProductHover from "./ProductHover";
 // using product hover ony for getting hover effect on my summer sale page items
 
 const Container = styled.div`
-/* width: 500px;
-height: 450px; */
 padding: 20px;
 display: flex;
 flex-wrap: wrap;

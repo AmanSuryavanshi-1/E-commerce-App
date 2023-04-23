@@ -1,5 +1,6 @@
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "@material-ui/icons";
 import styled from "styled-components"
+import { NavLink } from "react-router-dom";
 
 const Info = styled.div`
 opacity: 0;
@@ -78,9 +79,14 @@ const Product = ({item}) => { // defining {} prop here taken from products.jsx
         <Circle/>
         <Image src={item.img}/>
         <Info>
-        <Icon>
-            <ShoppingCartOutlined/>
-        </Icon>
+
+        <NavLink to={`/product/${item.id}`} style={{ color: "black" }}>
+  <Icon>
+    <ShoppingCartOutlined />
+  </Icon>
+</NavLink>
+
+        
             <Icon>
                 <SearchOutlined/>
             </Icon>
