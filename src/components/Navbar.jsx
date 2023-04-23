@@ -14,7 +14,6 @@ const Container = styled.div`
 
     } */
     /* instead of writing this function every time i can use this function  */
-    ${mobile({height:"50px"})}
 `;
 
 const Wrapper = styled.div`
@@ -41,13 +40,13 @@ const SearchContainer =styled.div`
     margin-left: 25px;
     padding: 5px;
     width:80%;
-    ${mobile({marginLeft: '10px',width:"70px"})}
+    ${mobile({marginLeft: '5px',width:"60px"})}
 `;
 
 const Input = styled.input`
     border:none;
     width:100%;
-    ${mobile({width:"50px"})}
+    ${mobile({width:"40px"})}
 `;
 
 const Center = styled.div`
@@ -76,7 +75,7 @@ font-size:17px;
 font-weight: 500;
 letter-spacing: 1px;
     cursor: pointer;
-    ${mobile({fontSize:"12px",marginLeft: "5px",letterSpacing:"0px",paddingLeft:"5px"})}
+    ${mobile({fontSize:"12px",marginLeft: "5px",letterSpacing:"0px",paddingLeft:"0px"})}
 
     padding: 10px;
     &:hover{
@@ -92,14 +91,13 @@ const MenuItem = styled.div`
     font-weight: 500;
     cursor:pointer;
     margin-left: 25px;
-${mobile({fontSize:"12px",marginLeft: "5px",letterSpacing:"0px",paddingLeft:"5px"})}
-/* borderRadius: "none",boxShadow:"none" */
+${mobile({fontSize:"12px",marginLeft: "5px",letterSpacing:"0px",paddingLeft:"0px"})}
 
 padding: 10px;
     &:hover{
         background-color: #e1f4ff;
         border-radius: 10px;
-        box-shadow: 3px 3px 8px #a1dbff ;
+        box-shadow: 3px 3px 5px #a1dbff ;
     }
 `;
 
@@ -122,7 +120,7 @@ const Navbar = () => {
             
             <Right>
                 <MenuItem><NavLink to="/Register" style={{color:"black",textDecoration:"none"}}>REGISTER</NavLink></MenuItem>
-                <MenuItem><NavLink to="/Login" style={{color:"black",textDecoration:"none"}}>SIGN IN</NavLink></MenuItem>
+                <MenuItem><NavLink to="/Login" style={{color:"black",textDecoration:"none"}}>LOGIN</NavLink></MenuItem>
                 <MenuItem>
                     <Badge badgeContent={4} color="primary">
                     <NavLink to="/Cart" style={{color:"black"}}><ShoppingCartOutlined /></NavLink>

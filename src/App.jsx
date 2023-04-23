@@ -8,6 +8,8 @@ import SummerSale from "./pages/SummerSale";
 import SingleProduct from "./pages/SingleProduct";
 import ProductList from "./pages/ProductList";
 import Furniture from "./pages/Furniture";
+import Shoes from "./pages/Shoes";
+import Electronic from "./pages/Electronic";
 
 import {
   Routes,
@@ -27,6 +29,8 @@ const App = () => {
          <Route path="/SummerSale" element={<SummerSale/>}/>     {/*summer sale */}
         <Route path="/ProductList" element={<ProductList/>}/>    {/*clearance sale */}
         <Route path="/Furniture" element={<Furniture/>}/>        {/*furniture sale */}
+        <Route path="/Shoes" element={<Shoes/>}/>                {/*Shoes sale */}
+        <Route path="/Electronic" element={<Electronic/>}/>      {/*Electronics sale */}
         <Route path="/SingleProduct" element={<SingleProduct/>}/>
       </Routes>
       </BrowserRouter>
