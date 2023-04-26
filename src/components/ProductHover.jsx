@@ -79,7 +79,6 @@ const Product = ({item}) => { // defining {} prop here taken from products.jsx
         <Circle/>
         <Image src={item.img}/>
         <Info>
-
         <NavLink to={`/product/${item.id}`} style={{ color: "black" }}>
   <Icon>
     <ShoppingCartOutlined />

@@ -48,7 +48,7 @@ const Shoes = () => {
             <Navbar/>
             <Announcement/>
     
-            <Title>Shoes Sale</Title>
+            <Title>Summer Sale</Title>
             <FilterContainer>
                 <Filter>
                     <FilterText>Filter Products:</FilterText>
