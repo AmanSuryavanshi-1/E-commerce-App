@@ -117,19 +117,19 @@ export const sliderItems = [
 
 export const categories = [
     {
-        id: 1,
+        id: 6,
         img: fashion,
         title: "Fashion",
         link:"SummerSale",
       },
       {
-        id: 3,
+        id: 7,
         img: home_furniture,
         title: "Home and Furniture",
         link:"Furniture"
       },
       {
-        id: 2,
+        id: 8,
         img: laptop,
         title: "Mobiles & Tablets",
         link:"Electronic"
@@ -138,104 +138,104 @@ export const categories = [
 
 export const AllProductItems = [
     {
-        id: 1,
+        id: 9,
         img: AllProductItems1,
         title: "Nike Revolution Shoes",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at earum fuga praesentium facilis, voluptatum fugiat dicta laudantium ullam officia sunt. Eaque odio voluptatum perferendis ipsam sequi corrupti quo expedita!",
       price:  500,
       },
       {
-        id: 2,
+        id: 10,
         img: AllProductItems2,
         title: "Nike Revolution Shoes",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at earum fuga praesentium facilis, voluptatum fugiat dicta laudantium ullam officia sunt. Eaque odio voluptatum perferendis ipsam sequi corrupti quo expedita!",
       price:  500,
       },
       {
-        id: 3,
+        id: 11,
         img: AllProductItems3,
         title: "Nike Revolution Shoes",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at earum fuga praesentium facilis, voluptatum fugiat dicta laudantium ullam officia sunt. Eaque odio voluptatum perferendis ipsam sequi corrupti quo expedita!",
       price:  500,
       },
       {
-        id: 4,
+        id: 12,
         img: AllProductItems4,
       },
       {
-        id: 5,
+        id: 13,
         img: AllProductItems5,
       },
       {
-        id: 6,
+        id: 14,
         img: AllProductItems6,
       },
       {
-        id: 7,
+        id: 15,
         img: AllProductItems7,
       },
       {
-        id: 8,
+        id: 16,
         img: AllProductItems8,
       }, {
-        id: 9,
+        id: 17,
         img: AllProductItems9,
       },{
-        id: 10,
+        id: 18,
         img: AllProductItems10,
       },{
-        id: 11,
+        id: 19,
         img: AllProductItems11,
       },{
-        id: 12,
+        id: 20,
         img: AllProductItems12,
       },
 ];
 
 export const SummerItems = [
   {
-      id: 1,
+      id: 21,
       img: s1,
     },
     {
-      id: 2,
+      id: 22,
       img: s2,
     },
     {
-      id: 3,
+      id: 23,
       img: s3,
     },
     {
-      id: 4,
+      id: 24,
       img: s4,
     },
     {
-      id: 5,
+      id: 25,
       img: s5,
     },
     {
-      id: 6,
+      id:26,
       img: s6,
     },
     {
-      id: 7,
+      id: 27,
       img: s7,
     },
     {
-      id: 8,
+      id: 28,
       img: s8,
     },
     {
-      id: 9,
+      id: 29,
       img: s9,
     },{
-      id: 10,
+      id: 30,
       img: s10,
     },{
-      id: 11,
+      id: 31,
       img: s11,
     },{
-      id: 12,
+      id: 32,
       img: s12,
     },
 ];
@@ -243,136 +243,136 @@ export const SummerItems = [
 
 export const FurnitureItems = [
   {
-      id: 1,
+      id: 33,
       img: FurnitureItem1,
     },
     {
-      id: 2,
+      id: 34,
       img:FurnitureItem10,
     },
     {
-      id: 3,
+      id: 35,
       img: FurnitureItem13,
     },
     {
-      id: 4,
+      id: 36,
       img: FurnitureItem4,
     },
     {
-      id: 5,
+      id: 37,
       img: FurnitureItem5,
     },
     {
-      id: 6,
+      id: 38,
       img: FurnitureItem6,
     },
     {
-      id: 7,
+      id: 39,
       img: FurnitureItem11,
     },
     {
-      id: 9,
+      id: 40,
       img: FurnitureItem9,
     },{
-      id: 10,
+      id: 41,
       img: FurnitureItem15,
     },{
-      id: 14,
+      id: 42,
       img: FurnitureItem14,
     },{
-      id: 15,
+      id: 43,
       img: FurnitureItem7,
     },
 ];
 
 export const ShoesItems = [
   {
-      id: 1,
+      id: 44,
       img: Shoes1,
     },
     {
-      id: 2,
+      id: 45,
       img:Shoes2,
     },
     {
-      id: 3,
+      id: 46,
       img: Shoes3,
     },
     {
-      id: 4,
+      id: 47,
       img: Shoes4,
     },
     {
-      id: 5,
+      id: 48,
       img: Shoes5,
     },
     {
-      id: 6,
+      id: 49,
       img: Shoes6,
     },
     {
-      id: 7,
+      id: 50,
       img: Shoes7,
     },
     {
-      id: 8,
+      id: 51,
       img: Shoes8,
     },{
       id: 9,
       img: Shoes9,
     },{
-      id: 10,
+      id: 52,
       img: Shoes10,
     },{
-      id: 11,
+      id: 53,
       img: Shoes11,
     },{
-      id: 11,
+      id: 54,
       img: Shoes,
     }
 ];
 
 export const ElectronicsItems = [
   {
-      id: 1,
+      id: 55,
       img: Elec2,
     },
     {
-      id: 2,
+      id: 56,
       img:Elec14,
     },
     {
-      id: 4,
+      id: 57,
       img: Elec4,
     },
     {
-      id: 5,
+      id: 58,
       img: Elec5,
     },
     {
-      id: 6,
+      id: 59,
       img: Elec6,
     },
     {
-      id: 8,
+      id: 60,
       img: Elec8,
     },{
-      id: 9,
+      id: 61,
       img: Elec9,
     },{
-      id: 10,
+      id: 62,
       img: Elec10,
     },{
-      id: 11,
+      id: 63,
       img: Elec11,
     },{
-      id: 12,
+      id: 64,
       img: Elec12,
     },{
-      id: 13,
+      id: 65,
       img: Elec13,
     },{
-      id: 15,
+      id: 66,
       img: Elec15,
     }
 ];

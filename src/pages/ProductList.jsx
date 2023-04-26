@@ -5,6 +5,7 @@ import Products from '../components/Products';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import {mobile} from "../responsive";
+// import { useLocation } from 'react-router-dom';
 
 const Container = styled.div`
 
@@ -42,7 +43,9 @@ cursor:pointer;
 `;
 
 const ProductList = () => {
-  return (
+//   const location = useLocation();
+//   const cat = location.pathname.split("/")[2];
+    return (
     // returning ProductList page on App.jsx so we can see it
     <Container>
         <Navbar/>

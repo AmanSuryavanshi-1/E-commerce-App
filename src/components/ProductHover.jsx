@@ -75,17 +75,15 @@ cursor: pointer;
         
 const Product = ({item}) => { // defining {} prop here taken from products.jsx
   return (
+    <NavLink to={`/product/${item.id}`} style={{ color: "black" }}>
+
     <Container>
         <Circle/>
         <Image src={item.img}/>
         <Info>
-        <NavLink to={`/product/${item.id}`} style={{ color: "black" }}>
-  <Icon>
-    <ShoppingCartOutlined />
-  </Icon>
-</NavLink>
-
-        
+            <Icon>
+                <ShoppingCartOutlined />
+            </Icon>
             <Icon>
                 <SearchOutlined/>
             </Icon>
@@ -95,6 +93,7 @@ const Product = ({item}) => { // defining {} prop here taken from products.jsx
         </Info>
 
         </Container>
+        </NavLink>
   )
 }
 
