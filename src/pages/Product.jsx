@@ -112,17 +112,20 @@ border-radius: 10px;
 
 
 const Product = ({ match }) => {
-
-
+    const id = match?.params?.id;
+    const [product, setProduct] = useState({});
   
-    const location = useLocation();
-    const id = location.pathname.split("/")[2];
-    const [product,setProduct] = useState({});
     useEffect(() => {
-      const product = AllProductItems.find(item => item.id === id);
-      setProduct(product || {});
+        const foundProduct = AllProductItems.find(item => item.id === id);
+        if (foundProduct) {
+            setProduct(foundProduct);
+        } else {
+            // Show an error message or set a default value
+            setProduct({ title: "Product not found", price: 0, desc: "This product does not exist", img: "https://via.placeholder.com/400" });
+        }
     }, [id]);
-      
+    console.log("id", id); 
+    console.log("product.desc", product.desc)
   return (
     <Container>
         <Navbar/>

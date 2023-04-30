@@ -34,17 +34,17 @@ import s10 from "./images/SummerImages/s8.png"
 import s11 from "./images/SummerImages/s9.png"
 import s12 from "./images/SummerImages/s10.png"
 
-import FurnitureItem1 from "./images/FurnitureItems/FurnitureItem1.png"
-import FurnitureItem4 from "./images/FurnitureItems/FurnitureItem4.png"
-import FurnitureItem5 from "./images/FurnitureItems/FurnitureItem5.png"
-import FurnitureItem6 from "./images/FurnitureItems/FurnitureItem6.png"
-import FurnitureItem7 from "./images/FurnitureItems/FurnitureItem7.png"
-import FurnitureItem9 from "./images/FurnitureItems/FurnitureItem9.png"
-import FurnitureItem10 from "./images/FurnitureItems/FurnitureItem10.png"
-import FurnitureItem11 from "./images/FurnitureItems/FurnitureItem11.png"
-import FurnitureItem13 from "./images/FurnitureItems/FurnitureItem13.png"
-import FurnitureItem14 from "./images/FurnitureItems/FurnitureItem14.png"
-import FurnitureItem15 from "./images/FurnitureItems/FurnitureItem15.png"
+import FurnitureItem1 from "./images/FurnitureItems/FurnitureItem1.png";
+import FurnitureItem4 from "./images/FurnitureItems/FurnitureItem4.png";
+import FurnitureItem5 from "./images/FurnitureItems/FurnitureItem5.png";
+import FurnitureItem6 from "./images/FurnitureItems/FurnitureItem6.png";
+import FurnitureItem7 from "./images/FurnitureItems/FurnitureItem7.png";
+import FurnitureItem9 from "./images/FurnitureItems/FurnitureItem9.png";
+import FurnitureItem10 from "./images/FurnitureItems/FurnitureItem10.png";
+import FurnitureItem11 from "./images/FurnitureItems/FurnitureItem11.png";
+import FurnitureItem13 from "./images/FurnitureItems/FurnitureItem13.png";
+import FurnitureItem14 from "./images/FurnitureItems/FurnitureItem14.png";
+import FurnitureItem15 from "./images/FurnitureItems/FurnitureItem15.png";
 
 
 import Shoes1 from "./images/ShoesItems/Shoes.png";
@@ -141,22 +141,22 @@ export const AllProductItems = [
         id: 9,
         img: AllProductItems1,
         title: "Nike Revolution Shoes",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at earum fuga praesentium facilis, voluptatum fugiat dicta laudantium ullam officia sunt. Eaque odio voluptatum perferendis ipsam sequi corrupti quo expedita!",
-      price:  500,
+         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at earum fuga praesentium facilis, voluptatum fugiat dicta laudantium ullam officia sunt. Eaque odio voluptatum perferendis ipsam sequi corrupti quo expedita!",
+         price:  500,
       },
       {
         id: 10,
         img: AllProductItems2,
         title: "Nike Revolution Shoes",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at earum fuga praesentium facilis, voluptatum fugiat dicta laudantium ullam officia sunt. Eaque odio voluptatum perferendis ipsam sequi corrupti quo expedita!",
-      price:  500,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at earum fuga praesentium facilis, voluptatum fugiat dicta laudantium ullam officia sunt. Eaque odio voluptatum perferendis ipsam sequi corrupti quo expedita!",
+        price:  500,
       },
       {
         id: 11,
         img: AllProductItems3,
         title: "Nike Revolution Shoes",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at earum fuga praesentium facilis, voluptatum fugiat dicta laudantium ullam officia sunt. Eaque odio voluptatum perferendis ipsam sequi corrupti quo expedita!",
-      price:  500,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at earum fuga praesentium facilis, voluptatum fugiat dicta laudantium ullam officia sunt. Eaque odio voluptatum perferendis ipsam sequi corrupti quo expedita!",
+         price:  500,
       },
       {
         id: 12,
@@ -196,10 +196,16 @@ export const SummerItems = [
   {
       id: 21,
       img: s1,
+      title: "Nike Revolution Shoes",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at earum fuga praesentium facilis, voluptatum fugiat dicta laudantium ullam officia sunt. Eaque odio voluptatum perferendis ipsam sequi corrupti quo expedita!",
+         price:  500,
     },
     {
       id: 22,
       img: s2,
+      title: "Nike Revolution Shoes",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at earum fuga praesentium facilis, voluptatum fugiat dicta laudantium ullam officia sunt. Eaque odio voluptatum perferendis ipsam sequi corrupti quo expedita!",
+         price:  500,
     },
     {
       id: 23,
